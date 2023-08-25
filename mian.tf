@@ -14,3 +14,4 @@ provider "aws" {
 resource "aws_sns_topic" "tmp_001" {}
 resource "aws_sns_topic" "tmp_002" {}
 resource "aws_sns_topic" "tmp_003" {}
+resource "aws_sns_topic" "tmp_004" {}
