@@ -5,6 +5,12 @@ terraform {
       name = "terraform-cloud-version-test"
     }
   }
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "= 0.12.20"
+    }
+  }
 }
 
 provider "aws" {
