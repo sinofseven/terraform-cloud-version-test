@@ -5,6 +5,13 @@ terraform {
       name = "terraform-cloud-version-test"
     }
   }
+
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "3.37.0"
+    }
+  }
 }
 
 provider "aws" {
@@ -16,3 +23,4 @@ resource "aws_sns_topic" "tmp_002" {}
 resource "aws_sns_topic" "tmp_003" {}
 resource "aws_sns_topic" "tmp_004" {}
 resource "aws_sns_topic" "tmp_005" {}
+resource "aws_sns_topic" "tmp_006" {}
